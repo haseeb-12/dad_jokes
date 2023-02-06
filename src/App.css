@@ -1,10 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .3s;
+    letter-spacing: .5px;
 }
-.App{
+
+:root {
+    --primaryPurple: #646ff0;
+    --black-1: #646681;
+    --black-2: #585858;
+    --bg-1: #f8f8ff;
+    --bg-2: #ecedf6;
+    --bg-3: #cccdde;
+    --gray-1: #eee;
+    --gray-2: #dedfe1;
+    --black: #000;
+    --white: #fff;
+}
+
+.app {
+    background: var(--bg-1);
+    height: 100vh;
+}
+
+.app h1 {
+    text-align: center;
+    color: var(--black-1);
+    font-size: 2.6rem;
+    padding: 1rem 0;
+}
+
+.todo_btn {
+    max-width: 50rem;
+    width: 90%;
+    margin: 4rem auto;
     display: flex;
-    width: 70%;
-    margin: 8rem auto;
+    justify-content: space-between;
+}
+
+.todo_btn button {
+    cursor: pointer;
+    padding: .7rem 1.4rem;
+    border-radius: .3rem;
+    border: none;
+    font-size: 1rem;
+    background: var(--primaryPurple);
+    color: var(--white);
+}
+.todo_btn select{
+    cursor: pointer;
+    padding: .7rem 1.4rem;
+    border-radius: .3rem;
+    border: none;
+    font-size: 1rem;
 }
